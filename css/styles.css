@@ -1,0 +1,328 @@
+body {
+  background-color: #faf9f9;
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+
+div {
+  margin: 0;
+}
+
+h1 {
+  color: #555b6e;
+  margin: 50px auto 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  color: #30323d;
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 50px;
+}
+
+h3 {
+  color: #555b6e;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+h4 {
+  color: #000000;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  line-height: 2;
+  font-size: 2rem;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid #414141;
+  border-bottom: 1px solid #414141;
+  width: 66%;
+  margin: 50px auto 50px auto;
+}
+
+ul {
+  margin: 0 auto 10px auto;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  min-height: 30px;
+  padding: 3px 0;
+}
+
+.row > div {
+  margin-bottom: 30px;
+}
+
+figure {
+  position: relative;
+  overflow: hidden;
+}
+
+figcaption {
+  padding: 20px 30px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.background-light-blue {
+  background-color: #bee3db;
+}
+
+.background-dark-blue {
+  background-color: #89b0ae;
+}
+
+.background-navy {
+  background-color: #555b6e;
+}
+
+.background-white {
+  background-color: #f5f5f5;
+}
+
+.background-orange {
+  background-color: #ffd6ba;
+}
+
+.container {
+  width: 1280px;
+  padding: 40px 200px;
+}
+
+/*----------*/
+/* Sections */
+/*----------*/
+
+/* - main - */
+#main h1 {
+  margin: 0;
+  font-size: 15rem;
+  font-family: "Reenie Beanie", cursive;
+}
+
+#main h2 {
+  font-size: 4rem;
+}
+
+.name-back {
+  padding: 100px 100px;
+}
+
+/* - about me - */
+
+#about-me img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+#about-me .text-container {
+  text-align: left;
+}
+
+/* - experience -*/
+
+#experience .heading {
+  text-align: left;
+  padding-left: 0;
+}
+
+#experience .heading h3 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+#experience .row h2 {
+  text-align: left;
+  color: #629390;
+  font-size: 3rem;
+}
+
+#experience .heading p {
+  color: #434242;
+  font-family: "Montserrat", serif;
+  margin-bottom: 0;
+}
+
+#experience .description {
+  text-align: left;
+}
+
+#experience .description h3 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+/* - projects -*/
+
+figcaption h3 {
+  color: #f5f5f5;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+figcaption p {
+  color: #f5f5f5;
+  font-family: "Montserrat", serif;
+  font-size: 1.6rem;
+}
+
+figure a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+/* - skills -*/
+
+.skill-name {
+  font-size: 2rem;
+  color: #434242;
+  font-family: "Montserrat", serif;
+  display: inline-block;
+  width: 60%;
+  text-align: left;
+}
+
+.skill-score {
+  float: right;
+}
+
+.glyphicon {
+  color: #595e73;
+  font-size: 18px;
+}
+
+.filled {
+  color: #595e73;
+}
+
+/* - links -*/
+
+#links a {
+  color: #595e73;
+  opacity: 60%;
+  font-size: 1.8rem;
+}
+
+#links a:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  text-decoration: none;
+}
+
+/*---------------*/
+/***** EFFECT *****/
+/*---------------*/
+
+figure.effect {
+  background: #595e73;
+  color: #f5f5f5;
+}
+
+figure.effect img {
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure.effect:hover img {
+  opacity: 0.2;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect figcaption {
+  text-align: left;
+}
+
+figure.effect h3 {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 20px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect:hover h3 {
+  opacity: 1;
+}
+
+figure.effect h3::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: "";
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+figure.effect:hover h3::after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect p {
+  padding-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+figure.effect:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect img {
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
