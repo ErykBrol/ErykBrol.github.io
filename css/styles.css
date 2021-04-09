@@ -208,21 +208,8 @@ figure a {
   color: #434242;
   font-family: "Montserrat", serif;
   display: inline-block;
-  width: 60%;
-  text-align: left;
-}
-
-.skill-score {
-  float: right;
-}
-
-.glyphicon {
-  color: #595e73;
-  font-size: 18px;
-}
-
-.filled {
-  color: #595e73;
+  width: 100%;
+  text-align: center;
 }
 
 /* - links -*/
